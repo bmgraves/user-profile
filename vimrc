@@ -82,6 +82,21 @@ set cmdheight=2
 " Display line numbers on the left
 " set number
 set relativenumber
+
+" Function to toggle between absolute numbers, and relative number.
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+" Toggle numbers
+nnoremap <C-n> :call NumberToggle()<cr>
+
+
+
+
 " Quickly time out on keycodes, but never time out on mappings
 set notimeout ttimeout ttimeoutlen=200
 
