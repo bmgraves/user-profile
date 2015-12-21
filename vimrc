@@ -79,20 +79,12 @@ set t_vb=
 " press <Enter> to cointinue"
 set cmdheight=2
 
-" Display line numbers on the left
-" set number
+" Display line numbers on the left. Enable both number and relativenumber to allow for hybrid line numbers.
+" IE: Line numbers will be relative, but the line you are on shows absolute linenumber.
+set number
 set relativenumber
 
-" Function to toggle between absolute numbers, and relative number.
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-" Toggle numbers
-nnoremap <C-n> :call NumberToggle()<cr>
+
 
 
 
