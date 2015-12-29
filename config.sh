@@ -25,7 +25,7 @@ fi
 ln -s ${PWD}/vimrc ~/.vimrc
 
 if [ -f ~/.vim ]; then
-        ln -s ${PWD}/color ~/.vim/
+        ln -s ${PWD}/colors ~/.vim/
 else
         mkdir ~/.vim
         ln -s ${PWD}/colors ~/.vim/
