@@ -28,5 +28,5 @@ if [ -f ~/.vim ]; then
         ln -s ${PWD}/color ~/.vim/
 else
         mkdir ~/.vim
-        ln -s ${PWD}/color ~/.vim/
+        ln -s ${PWD}/colors ~/.vim/
 fi
