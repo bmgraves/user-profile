@@ -36,4 +36,4 @@ let g:colors_name = 'ms-color'
 " --------------------------------------
 
 hi Normal ctermfg=white ctermbg=black
-
+hi Comment cterm=bold ctermfg=DarkGreen ctermbg=black
