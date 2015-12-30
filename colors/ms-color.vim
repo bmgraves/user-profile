@@ -22,7 +22,7 @@
 " --------------------------------
 
 " First some initial cleanup and configurations. Default color set will be under dark background settings.
-set background=dark
+set background=light
 
 " As we load t his color scheme we want vim to clear out existing highlighting settings.
 hi clear
