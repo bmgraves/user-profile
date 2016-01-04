@@ -4,6 +4,8 @@
 "made as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
 
+" Set Color Scheme to my custom color scheme:
+colo ms-color
 "Enable Syntax highlighting
 syntax on
 
