@@ -33,9 +33,13 @@ let colors_name = "ms-color"
 " --------------------
 "  Vim Environment
 "  -------------------
-
-hi LineNr term=underline ctermfg=14
+hi LineNr ctermfg=166 ctermbg=8
 hi ModeMsg term=bold cterm=bold ctermfg=50 ctermbg=52
+hi StatusLine term=bold,reverse cterm=bold,reverse ctermfg=52 ctermbg=147
+hi Cursor ctermfg=88 ctermbg=55 guifg=bg guibg=fg
+hi Folded term=standout ctermfg=15 ctermbg=129
+hi FoldColumn term=standout ctermfg=4 ctermbg=7 guifg=DarkBlue guibg=Gray80
+
 " ---------------------
 " Standard Colors
 " --------------------
@@ -46,16 +50,17 @@ hi Normal ctermfg=white ctermbg=black guibg=white guifg=Black
 hi Comment term=bold ctermfg=93
 hi Constant term=underline ctermfg=21
 hi Special term=bold ctermfg=5
-hi Identifier term=underline ctermfg=6 guifg=DarkCyan
-hi Statement term=bold ctermfg=3 gui=bold guifg=Brown
-hi PreProc term=underline ctermfg=5 guifg=Magenta3
+hi Identifier term=underline ctermfg=14 guifg=Cyan
+hi Statement term=bold ctermfg=14 gui=bold
+hi PreProc term=underline ctermfg=125 guifg=Magenta3
 hi Type term=underline ctermfg=2 gui=bold guifg=SeaGreen
 hi Ignore cterm=bold ctermfg=8 guifg=bg
 hi Error term=reverse cterm=bold ctermfg=7 ctermbg=1 gui=bold guifg=White guibg=Red
 hi Todo term=standout ctermfg=0 ctermbg=3 guifg=Blue guibg=Yellow
 
-hi String ctermfg=22
-hi Number ctermfg=49
+hi String ctermfg=24
+hi Number ctermfg=1
+
 
 " ----------------------
 "  WIP
@@ -68,7 +73,6 @@ hi IncSearch term=reverse cterm=reverse gui=reverse
 hi Search term=reverse ctermbg=3 guibg=Gold2
 hi MoreMsg term=bold ctermfg=2 gui=bold guifg=SeaGreen
 hi Question term=standout ctermfg=2 gui=bold guifg=SeaGreen
-hi StatusLine term=bold,reverse cterm=bold,reverse gui=bold guifg=White guibg=Black
 hi StatusLineNC term=reverse cterm=reverse gui=bold guifg=PeachPuff guibg=Gray45
 hi VertSplit term=reverse cterm=reverse gui=bold
 hi Title term=bold ctermfg=5 gui=bold guifg=DeepPink3
@@ -76,12 +80,9 @@ hi Visual term=reverse cterm=reverse gui=reverse guifg=Grey80 guibg=fg
 hi VisualNOS term=bold,underline cterm=bold,underline gui=bold,underline
 hi WarningMsg term=standout ctermfg=1 gui=bold guifg=Red
 hi WildMenu term=standout ctermfg=0 ctermbg=3 guifg=Black guibg=Yellow
-hi Folded term=standout ctermfg=4 ctermbg=7 guifg=Black guibg=#e3c1a5
-hi FoldColumn term=standout ctermfg=4 ctermbg=7 guifg=DarkBlue guibg=Gray80
 hi DiffAdd term=bold ctermbg=4 guibg=White
 hi DiffChange term=bold ctermbg=5 guibg=#edb5cd
 hi DiffDelete term=bold cterm=bold ctermfg=4 ctermbg=6 gui=bold guifg=LightBlue guibg=#f6e8d0
 hi DiffText term=reverse cterm=bold ctermbg=1 gui=bold guibg=#ff8060
-hi Cursor guifg=bg guibg=fg
 hi lCursor guifg=bg guibg=fg
 
