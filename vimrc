@@ -7,6 +7,10 @@ set nocompatible
 "Enable Syntax highlighting
 syntax on
 
+" Automatic View saving for handling folding on files.
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview 
+
 " ---------------------------------------------------------------------------------
 "Must have options
 " One such option is the 'hidden' option, which allows you to re-use the same
