@@ -14,7 +14,7 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
 
 " Encryptions options:
-set cm=blowfish2
+set cm=blowfish
 
 " ---------------------------------------------------------------------------------
 "Must have options
