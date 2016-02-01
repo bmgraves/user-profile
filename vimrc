@@ -13,6 +13,9 @@ syntax on
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
 
+" Encryptions options:
+set cm=blowfish2
+
 " ---------------------------------------------------------------------------------
 "Must have options
 " One such option is the 'hidden' option, which allows you to re-use the same
