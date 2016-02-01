@@ -61,9 +61,14 @@ hi Todo term=standout ctermfg=0 ctermbg=3 guifg=Blue guibg=Yellow
 hi String ctermfg=24
 hi Number ctermfg=1
 
+" -----------
+" WIP
+" -----------
+hi Visual term=reverse ctermfg=darkblue ctermbg=magenta gui=reverse guifg=Grey80 guibg=fg
+
 
 " ----------------------
-"  WIP
+"  PENDING
 "  ---------------------
 hi SpecialKey term=bold ctermfg=4 guifg=Blue
 hi NonText term=bold cterm=bold ctermfg=4 gui=bold guifg=Blue
@@ -76,7 +81,7 @@ hi Question term=standout ctermfg=2 gui=bold guifg=SeaGreen
 hi StatusLineNC term=reverse cterm=reverse gui=bold guifg=PeachPuff guibg=Gray45
 hi VertSplit term=reverse cterm=reverse gui=bold
 hi Title term=bold ctermfg=5 gui=bold guifg=DeepPink3
-hi Visual term=reverse cterm=reverse gui=reverse guifg=Grey80 guibg=fg
+
 hi VisualNOS term=bold,underline cterm=bold,underline gui=bold,underline
 hi WarningMsg term=standout ctermfg=1 gui=bold guifg=Red
 hi WildMenu term=standout ctermfg=0 ctermbg=3 guifg=Black guibg=Yellow
