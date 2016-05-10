@@ -1,4 +1,3 @@
-"test"
 "Features"
 "Set 'nocompatible' to ward off unexpected things that your distro might have
 "made as well as sanely reset options when re-sourcing .vimrc
@@ -13,7 +12,9 @@ syntax on
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
 
-" Encryptions options:
+" Encryptions options: Set Encryption to blowfish, rather then the default
+" 'zip' Would prefer to use 'blowfish2', but blowfish provides maximum
+" compatability.
 set cm=blowfish
 
 " ---------------------------------------------------------------------------------
@@ -104,28 +105,8 @@ set notimeout ttimeout ttimeoutlen=200
 
 " Use <F11> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F11>
-
-
 "------------------------------------------------------------
-"" Indentation options {{{1
-"
-"" Indentation settings according to personal preference.
- 
-" Indentation settings for using 4 spaces instead of tabs.
-" " Do not change 'tabstop' from its default value of 8 with this setup.
-"
-"set shiftwidth=4
-"set softtabstop=4
-"set expandtab
-
-" Indentation settings for using hard tabs for indent. Display tabs as
-" four characters wide.
-" set shiftwidth=4
-" set tabstop=4
-
- 
-"------------------------------------------------------------
-"" Mappings {{{1
+"" Mappings 
 "
 "" Useful mappings
 
