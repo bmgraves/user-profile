@@ -28,13 +28,7 @@ else
 fi
 
 if [ -d ~/.vim ]; then
-	if [ -f ~/.vim/colors ]; then
-		rm -f ~/.vim/colors
-        	ln -s ${PWD}/colors ~/.vim/
-	else
-        	ln -s ${PWD}/colors ~/.vim/
-	fi
+	echo ".vim already exists, please remove it, and re-run this config"
 else
-        mkdir ~/.vim
-        ln -s ${PWD}/colors ~/.vim/
+        ln -s ${PWD}/vim ~/.vim
 fi
