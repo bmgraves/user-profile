@@ -8,6 +8,11 @@ colo ms-color
 "Enable Syntax highlighting
 syntax on
 
+" tab configs
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 " Automatic View saving for handling folding on files.
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
@@ -118,3 +123,9 @@ nnoremap <C-L> :nohl<CR><C-L>
 map <C-n> :NERDTreeToggle<CR>
 execute pathogen#infect()
 call pathogen#helptags()
+
+augroup templates
+  au!
+  " Check Directory for template files
+  autocmd BufNewFile *.* silent! execute '0r ~/.vim/templates/skeleton.'.expand("<afile>:e")
+augroup END
