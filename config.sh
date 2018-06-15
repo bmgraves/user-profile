@@ -32,6 +32,12 @@ if [ -d ~/.vim ]; then
 else
         ln -s ${PWD}/vim ~/.vim
 fi
+
+if [ -d ~/.vim/plugged ]; then
+   echo "Plugged exists, continuing"
+else
+  mkdir ~/.vim/plugged
+fi
 #if [ -d ~/.vimpkg ]; then
 #	echo ".vimpkg already exists, please remove it, and re-run this config"
 #	unlink ~/.vimpkg
