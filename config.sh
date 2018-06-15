@@ -28,13 +28,14 @@ else
 fi
 
 if [ -d ~/.vim ]; then
-	echo ".vim already exists, please remove it, and re-run this config"
+	unlink ~/.vim
 else
         ln -s ${PWD}/vim ~/.vim
 fi
-if [ -d ~/.vimpkg ]; then
-	echo ".vimpkg already exists, please remove it, and re-run this config"
-else
-        ln -s ${PWD}/vimpkg ~/.vimpkg
-        ln -s ${PWD}/vimpkg/bundle ${PWD}/vim/bundle
-fi
+#if [ -d ~/.vimpkg ]; then
+#	echo ".vimpkg already exists, please remove it, and re-run this config"
+#	unlink ~/.vimpkg
+#else
+#        ln -s ${PWD}/vimpkg ~/.vimpkg
+#        ln -s ${PWD}/vimpkg/bundle ${PWD}/vim/bundle
+#fi
