@@ -111,9 +111,15 @@ set notimeout ttimeout ttimeoutlen=200
 " Use <F11> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F11>
 "------------------------------------------------------------
+
+"" Plugins
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+call plug#end()
 "" Mappings 
 "
 "" Useful mappings
+
 
 
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
