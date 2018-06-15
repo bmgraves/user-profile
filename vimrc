@@ -115,6 +115,9 @@ set pastetoggle=<F11>
 "" Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tomtom/tcomment_vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 "" Mappings 
 "

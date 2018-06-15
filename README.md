@@ -1,8 +1,8 @@
 # user-profile
 My General Linux profile, Includes bashrc, vimrc, and other related tweaks.
 
-- Includes apt-vim for vim
-- Includese NERDTree for vim
+- Includes vim-Plug for vim
+  - NERDTree for vim
 - Vim has custom color profile.
 
 
