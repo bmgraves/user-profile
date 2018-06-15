@@ -120,15 +120,11 @@ call plug#end()
 "
 "" Useful mappings
 
-
-
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " " next search
 nnoremap <C-L> :nohl<CR><C-L>
 " Open NERDTree
 map <C-n> :NERDTreeToggle<CR>
-execute pathogen#infect()
-call pathogen#helptags()
 
 augroup templates
   au!
