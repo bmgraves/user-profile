@@ -9,7 +9,8 @@ fi
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
 	export TERM='xterm-256color'
 else
-	export TERM='xterm-color'
+	#export TERM='xterm-color'
+	export TERM='xterm-256color'
 fi
 
 
@@ -18,6 +19,11 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+export WORKON_HOME=~/VirtualEnv
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source ~/.local/bin/virtualenvwrapper.sh
+
+
 # get current branch in git repo
 # get current branch in git repo
 function parse_git_branch() {

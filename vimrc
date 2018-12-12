@@ -7,11 +7,13 @@ set nocompatible
 colo ms-color
 "Enable Syntax highlighting
 syntax on
+filetype off
+filetype indent plugin on
 
 " tab configs
-set tabstop=2
-set shiftwidth=2
-set expandtab
+"" set tabstop=2
+"" set shiftwidth=2
+"" set expandtab
 
 " Automatic View saving for handling folding on files.
 autocmd BufWinLeave *.* mkview
