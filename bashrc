@@ -13,6 +13,15 @@ else
 	export TERM='xterm-256color'
 fi
 
+##############################################################
+# VirtualEnvWrapper
+export WORKON_HOME=/usr/local/pythonenv/
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/python/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/python/bin/virtualenv
+source /usr/local/python/bin/virtualenvwrapper.sh
+
+##########################
+
 
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
