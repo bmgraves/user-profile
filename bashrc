@@ -15,10 +15,10 @@ fi
 
 ##############################################################
 # VirtualEnvWrapper
-export WORKON_HOME=/usr/local/pythonenv/
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/python/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/python/bin/virtualenv
-source /usr/local/python/bin/virtualenvwrapper.sh
+#export WORKON_HOME=/usr/local/pythonenv/
+#export VIRTUALENVWRAPPER_PYTHON=/usr/local/python/bin/python3
+#export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/python/bin/virtualenv
+#source /usr/local/python/bin/virtualenvwrapper.sh
 
 ##########################
 
@@ -28,9 +28,13 @@ source /usr/local/python/bin/virtualenvwrapper.sh
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-export WORKON_HOME=~/VirtualEnv
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-source ~/.local/bin/virtualenvwrapper.sh
+#export WORKON_HOME=~/VirtualEnv
+#export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+#source ~/.local/bin/virtualenvwrapper.sh
+
+
+# Load system unique settings:
+source ~/.bash.system
 
 
 # get current branch in git repo
