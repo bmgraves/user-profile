@@ -120,7 +120,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tomtom/tcomment_vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
-Plug 'tpope/vim-surround.vim'
+Plug 'tpope/vim-surround'
 call plug#end()
 "" Mappings 
 "
