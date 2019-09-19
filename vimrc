@@ -2,9 +2,42 @@
 "Set 'nocompatible' to ward off unexpected things that your distro might have
 "made as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
+"" ------------------------------------
+"" Plugins
+"" ------------------------------------
+"" Starting with plugins. Originally had them near the end but it broke a few things.
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tomtom/tcomment_vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-surround'
+Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'morhetz/gruvbox'
+call plug#end()
+"" ------------------------------------
+"" End Plugins
+"" ------------------------------------
 
+
+
+"--------------------------------------------
+" COLOR SCHEME:
+"--------------------------------------------
+" first set background to dark. Light themed is a blight upon the world.
+set background=dark
+colo gruvbox
+"--------------------------------------------
+
+"--------------------------------------------
+"Custom Color disabled. Playing with gruvbox
 " Set Color Scheme to my custom color scheme:
-colo ms-color
+" colo ms-color
+"--------------------------------------------
+
+
+
+"--------------------------------------------
 "Enable Syntax highlighting
 syntax on
 filetype off
@@ -19,10 +52,6 @@ filetype indent plugin on
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
 
-" Encryptions options: Set Encryption to blowfish, rather then the default
-" 'zip' Would prefer to use 'blowfish2', but blowfish provides maximum
-" compatability.
-set cm=blowfish
 
 " ---------------------------------------------------------------------------------
 "Must have options
@@ -69,9 +98,6 @@ set autoindent
 "from other editors would expect.
 set nostartofline
 
-" Display the cursor position on the last line of the screen or in the status
-" line of a window
-set ruler
 
 " Always display the status line, even if only one window is displayed
 set laststatus=2
@@ -102,10 +128,6 @@ set number
 set relativenumber
 
 
-
-
-
-
 " Quickly time out on keycodes, but never time out on mappings
 set notimeout ttimeout ttimeoutlen=200
 
@@ -114,25 +136,22 @@ set notimeout ttimeout ttimeoutlen=200
 set pastetoggle=<F11>
 "------------------------------------------------------------
 
-"" Plugins
-call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tomtom/tcomment_vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'itchyny/lightline.vim'
-Plug 'tpope/vim-surround'
-Plug 'vim-scripts/ReplaceWithRegister'
-call plug#end()
-"" Mappings 
-"
-"" Useful mappings
 
+"----------------------------------------
+"" Mappings 
+"----------------------------------------
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " " next search
 nnoremap <C-L> :nohl<CR><C-L>
 " Open NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
+"----------------------------------------
+" Templates:
+" This section allows you to add files to the .vim/templates directory.
+" Vim will read these files when creating new files of a file extension and insert text from the
+" Skeleton file into the new file.
+"---------------------------------------
 augroup templates
   au!
   " Check Directory for template files
@@ -141,3 +160,4 @@ augroup templates
   " Create dynamic Content
   autocmd BufNewFile * %substitute#\[:VIM_EVAL:\]\(.\{-\}\)\[:END_EVAL:\]#\=eval(submatch(1))#ge
 augroup END
+"---------------------------------------
