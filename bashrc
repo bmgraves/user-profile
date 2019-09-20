@@ -13,9 +13,9 @@ else
 	export TERM='xterm-256color'
 fi
 
-cd ~/Projects/user-profile 
-git pull > /dev/null
-cd ~
+# cd ~/Projects/user-profile 
+# git pull > /dev/null
+# cd ~
 
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
