@@ -17,6 +17,11 @@ cd ~/Projects/user-profile
 git pull > /dev/null
 cd ~
 
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+  alias vimdiff='nvim -d'
+fi
+
 
 ##############################################################
 # VirtualEnvWrapper

@@ -29,8 +29,15 @@ fi
 
 if [ -d ~/.vim ]; then
 	unlink ~/.vim
+  ln -s ${PWD}/vim ~/.vim
 else
         ln -s ${PWD}/vim ~/.vim
+fi
+if [ -d ~/.config/nvim ]; then
+	unlink ~/config/nvim
+  ln -s ${PWD}/nvim ~/.config/nvim
+else
+        ln -s ${PWD}/nvim ~/.config/nvim
 fi
 
 if [ -d ~/.vim/plugged ]; then
@@ -38,10 +45,3 @@ if [ -d ~/.vim/plugged ]; then
 else
   mkdir ~/.vim/plugged
 fi
-#if [ -d ~/.vimpkg ]; then
-#	echo ".vimpkg already exists, please remove it, and re-run this config"
-#	unlink ~/.vimpkg
-#else
-#        ln -s ${PWD}/vimpkg ~/.vimpkg
-#        ln -s ${PWD}/vimpkg/bundle ${PWD}/vim/bundle
-#fi
