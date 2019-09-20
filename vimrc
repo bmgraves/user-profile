@@ -12,6 +12,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'morhetz/gruvbox'
 call plug#end()
@@ -50,7 +51,7 @@ filetype indent plugin on
 
 " Automatic View saving for handling folding on files.
 autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview 
+autocmd BufWinEnter *.* silent! loadview 
 
 
 " ---------------------------------------------------------------------------------
