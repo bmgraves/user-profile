@@ -13,6 +13,11 @@ else
 	export TERM='xterm-256color'
 fi
 
+cd ~/Projects/user-profile 
+git pull > /dev/null
+cd ~
+
+
 ##############################################################
 # VirtualEnvWrapper
 #export WORKON_HOME=/usr/local/pythonenv/
