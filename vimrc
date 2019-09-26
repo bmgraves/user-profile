@@ -15,6 +15,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'morhetz/gruvbox'
+Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 "" ------------------------------------
 "" End Plugins
