@@ -3,7 +3,7 @@ if has('unix')
   let &packpath = &runtimepath
   source ~/.vimrc
 elseif has('win32')
-  set runtimepath^=~/AppData\Local\vim runtimepath+=~/AppData\Local\vim/after
+  set runtimepath^=~/AppData\Local\UserProfile\vim runtimepath+=~/AppData\Local\UserProfile\vim/after
   let &packpath = &runtimepath
-  source ~/AppData\Local\vimrc 
+  source ~/AppData\Local\UserProfile\vimrc 
 endif
