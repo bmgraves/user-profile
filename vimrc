@@ -15,10 +15,15 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'morhetz/gruvbox'
+if has('nvim')
+	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }	
+endif
 call plug#end()
 "" ------------------------------------
 "" End Plugins
 "" ------------------------------------
+
+let g:deoplete#enable_at_startup = 1
 
 
 
