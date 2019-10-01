@@ -44,7 +44,11 @@ fi
 
 
 # Load system unique settings:
-source ~/.bash.system
+if test -f ~/.bash.system; then
+	source ~/.bash.system
+else
+	mkdir ~/.bash.system
+fi
 
 
 # get current branch in git repo
