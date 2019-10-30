@@ -23,6 +23,20 @@ call plug#end()
 "" ------------------------------------
 "" End Plugins
 "" ------------------------------------
+if has('nvim')
+	let g:coc_global_extensions = [
+				\'coc-tsserver', 
+				\'coc-highlight', 
+				\'coc-dictionary', 
+				\'coc-syntax', 
+				\'coc-tag', 
+				\'coc-ultisnips', 
+				\'coc-neosnippet',
+				\'coc-json', 
+				\'coc-python', 
+				\]
+
+endif
 
 " let g:deoplete#enable_at_startup = 1
 
