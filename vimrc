@@ -16,15 +16,15 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'morhetz/gruvbox'
 if has('nvim')
-	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }	
+	" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }	
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 endif
 call plug#end()
 "" ------------------------------------
 "" End Plugins
 "" ------------------------------------
 
-let g:deoplete#enable_at_startup = 1
-
+" let g:deoplete#enable_at_startup = 1
 
 
 "--------------------------------------------
