@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/etc/openvpn/client'
 let g:netrw_dirhist_2='/home/bmgraves/Projects/user-profile/vim/plugged/lightline.vim'
 let g:netrw_dirhist_3='/home/bmgraves/Projects/django'
 let g:netrw_dirhist_4='/home/bmgraves/Projects/EmmyLua-LanguageServer/EmmyLua-LS/build/libs'
+let g:netrw_dirhist_5='/home/bmgraves/Projects/user-profile/vim'
