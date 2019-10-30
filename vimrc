@@ -26,7 +26,7 @@ call plug#end()
 
 
 "" Coc Configurations
-if exists(':CocInstall')
+if has('nvim')
 	let g:coc_global_extensions = [
 				\'coc-tsserver', 
 				\'coc-highlight', 
