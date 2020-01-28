@@ -47,7 +47,7 @@ fi
 if test -f ~/.bash.system; then
 	source ~/.bash.system
 else
-	mkdir ~/.bash.system
+	touch ~/.bash.system
 fi
 
 

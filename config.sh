@@ -34,7 +34,7 @@ else
         ln -s ${PWD}/vim ~/.vim
 fi
 if [ -d ~/.config/nvim ]; then
-	unlink ~/config/nvim
+	unlink ~/.config/nvim
   ln -s ${PWD}/nvim ~/.config/nvim
 else
         ln -s ${PWD}/nvim ~/.config/nvim
