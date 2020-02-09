@@ -29,13 +29,17 @@ fi
 
 if [ -d ~/.vim ]; then
 	unlink ~/.vim
-  ln -s ${PWD}/vim ~/.vim
+  	ln -s ${PWD}/vim ~/.vim
 else
         ln -s ${PWD}/vim ~/.vim
 fi
+if [ ! -d ~/.config/ ]; then
+	mkdir ~/.config
+fi
+
 if [ -d ~/.config/nvim ]; then
 	unlink ~/.config/nvim
-  ln -s ${PWD}/nvim ~/.config/nvim
+  	ln -s ${PWD}/nvim ~/.config/nvim
 else
         ln -s ${PWD}/nvim ~/.config/nvim
 fi
