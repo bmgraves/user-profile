@@ -11,9 +11,9 @@
 # First bashrc ############
 if [ -f ~/.bashrc ]; then
         rm -f ~/.bashrc
-	ln -s ${PWD}/bashrc ~/.bashrc
+	ln -s ${PWD}/shell-manager/bashrc ~/.bashrc
 else
-	ln -s ${PWD}/bashrc ~/.bashrc
+	ln -s ${PWD}/shell-manager/bashrc ~/.bashrc
 fi
 
 ##############################
@@ -50,3 +50,13 @@ else
   mkdir ~/.vim/plugged
 fi
 ##########################################
+### TMUX
+
+if [ -f ~/.tmux.conf ]; then
+	rm -f ~/.tmux.conf
+	ln -s ${PWD}/tmux-manager/tmux.conf ~/.tmux.conf
+else
+	ln -s ${PWD}/tmux-manager/tmux.conf ~/.tmux.conf
+fi
+
+##

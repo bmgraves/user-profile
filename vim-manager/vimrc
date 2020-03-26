@@ -6,6 +6,7 @@ set nocompatible
 "" Plugins
 "" ------------------------------------
 "" Starting with plugins. Originally had them near the end but it broke a few things.
+"
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tomtom/tcomment_vim'
@@ -192,6 +193,10 @@ set shortmess+=c
 
 " always show signcolumns
 set signcolumn=yes
+
+
+"" Remap JJ as <ESC>
+imap jj <Esc>
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
