@@ -22,16 +22,16 @@ fi
 
 if [ -f ~/.vimrc ]; then
 	rm -f ~/.vimrc
-	ln -s ${PWD}/vimrc ~/.vimrc
+	ln -s ${PWD}/vim-manager/vimrc ~/.vimrc
 else
-	ln -s ${PWD}/vimrc ~/.vimrc
+	ln -s ${PWD}/vim-manager/vimrc ~/.vimrc
 fi
 
 if [ -d ~/.vim ]; then
 	unlink ~/.vim
-  	ln -s ${PWD}/vim ~/.vim
+  	ln -s ${PWD}/vim-manager/vim ~/.vim
 else
-        ln -s ${PWD}/vim ~/.vim
+        ln -s ${PWD}/vim-manager/vim ~/.vim
 fi
 if [ ! -d ~/.config/ ]; then
 	mkdir ~/.config
@@ -39,9 +39,9 @@ fi
 
 if [ -d ~/.config/nvim ]; then
 	unlink ~/.config/nvim
-  	ln -s ${PWD}/nvim ~/.config/nvim
+  	ln -s ${PWD}/vim-manager/nvim ~/.config/nvim
 else
-        ln -s ${PWD}/nvim ~/.config/nvim
+        ln -s ${PWD}/vim-manager/nvim ~/.config/nvim
 fi
 
 if [ -d ~/.vim/plugged ]; then
@@ -49,3 +49,4 @@ if [ -d ~/.vim/plugged ]; then
 else
   mkdir ~/.vim/plugged
 fi
+##########################################

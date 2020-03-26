@@ -23,6 +23,10 @@ if type nvim > /dev/null 2>&1; then
 fi
 
 
+
+###Alias
+alias ls='ls --color'
+
 ##############################################################
 # VirtualEnvWrapper
 #export WORKON_HOME=/usr/local/pythonenv/
