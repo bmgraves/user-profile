@@ -323,3 +323,12 @@ augroup templates
   autocmd BufNewFile * %substitute#\[:VIM_EVAL:\]\(.\{-\}\)\[:END_EVAL:\]#\=eval(submatch(1))#ge
 augroup END
 "---------------------------------------
+" Source check
+function! SourceIfExists(file)
+	if filereadable(expand(a:file))
+		exe 'source' a:file
+	endif
+endfunction
+
+" FInally Source system specific settings
+call SourceIfExists("~/.vimrc.system")
